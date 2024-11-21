@@ -6,6 +6,11 @@ import Table from "@/app/ui/invoices/table"
 import Pagination from "@/app/ui/invoices/pagination"
 import { Suspense } from "react"
 import { fetchInvoicesPages } from "@/app/lib/data"
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 
 type propsType = {
   searchParams?: Promise<{
